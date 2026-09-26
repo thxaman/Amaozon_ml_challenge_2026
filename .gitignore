@@ -1,0 +1,19 @@
+# Data
+data/raw/
+data/test/
+data/processed/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
