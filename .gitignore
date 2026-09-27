@@ -3,6 +3,10 @@ data/raw/
 data/test/
 data/processed/
 
+# Incomplete run artifacts - never a valid submission file, never commit
+output/*.partial
+output/smoke_test/
+
 # Python
 __pycache__/
 *.py[cod]

@@ -1,4 +1,13 @@
 """
+*** SUPERSEDED for final submission - kept for reference/audit only. ***
+Its output format (one row per candidate pair) does not match the
+required submission format (one row per S1), and running the full
+T1->T2->T3 chain this script was designed for materializes a
+multi-billion-row intermediate file at full test scale. The blocking
+logic below was copied verbatim into run_test_inference.py, which is
+now the production entry point. See SUBMISSION_PIPELINE.md.
+***
+
 STEP T1 - PRODUCTION TEST CANDIDATE GENERATION (FOUR-CHANNEL BLOCKING)
 
 This is the full-scale counterpart of the dev-scale blocking scripts
