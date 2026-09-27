@@ -1,4 +1,13 @@
 """
+*** SUPERSEDED for final submission - kept for reference/audit only. ***
+Running this at full test scale writes a multi-billion-row
+test_pair_features.tsv, which the project brief explicitly prohibits.
+The feature logic below (build_features / compute_pair_features) was
+copied verbatim into run_test_inference.py, which computes it
+transiently per-batch instead of materializing it to disk, and is now
+the production entry point. See SUBMISSION_PIPELINE.md.
+***
+
 STEP T2 - PRODUCTION TEST FEATURE ENGINEERING
 
 Builds pairwise features for every test candidate pair produced by
